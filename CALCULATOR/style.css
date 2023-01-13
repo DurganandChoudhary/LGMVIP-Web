@@ -1,0 +1,98 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   background:linear-gradient(to right,#352aae,#a83d3d);
+   font-weight: 800;
+
+}
+
+.container {
+    position: relative;
+    
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(10, 242, 76, 0.2);
+    border-left: 1px solid black;
+    box-shadow: 5px 5px 30px rgba(241, 7, 7, 0.2);
+    background:linear-gradient(to right,#9d5707,#5719d4);
+}
+
+.container .calculator {
+    position: relative;
+    display: grid;
+}
+
+.container .calculator .value {
+    grid-column: span 4;
+    height: 140px;
+    width: 360px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 40px;
+    background: transparent;
+    color: rgb(226, 233, 228);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(244, 239, 239, 0.942);
+}
+
+.container .calculator span {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 75px;
+    width: 90px;
+    color: rgb(235, 224, 224);
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.5s;
+}
+
+.container .calculator span:hover {
+    transition: 0s;
+    background: rgba(28, 2, 71, 0.05);
+}
+
+.container .calculator span:active {
+    background: #05b811;
+    color: #192f00;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container .calculator .clear {
+    grid-column: span 2;
+    width: 180px;
+    background: rgba(118, 56, 56, 0.05);
+}
+
+.container .calculator .plus {
+    grid-row: span 2;
+    height: 150px;
+}
+
+.equal {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+    body::before {
+        max-width: 75vw;
+        max-height: 75vh;
+    }
+
+}
