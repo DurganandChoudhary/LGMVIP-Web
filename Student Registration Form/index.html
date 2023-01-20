@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="box">
+            <div class="heading">
+                <h1>Student Registration Form</h1>
+            </div>
+            <div class="container">
+                <div class="form">
+                    
+                    <form autocomplete="off">
+                        <div class="name">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Enter Your Email" required>
+                        </div>
+                        <div class="website">
+                            <label for="website">Website:</label>
+                            <input type="url" id="website"
+                                placeholder="https://www.xyz.com" required>
+                        </div>
+                        <div class="image">
+                            <label for="url">Image:</label>
+                            <input type="url" id="url" placeholder="Enter Your Image URL" required>
+                        </div>
+                        <div class="gender">
+                            <label for="gender">Gender:</label>
+                            <span class="text-p">
+                                <label><input type="radio" name="male-female"
+                                        id="male" value="Male" required>Male</label>
+                                <label><input type="radio" name="male-female"
+                                        id="female" value="Female"
+                                        required>Female</label>
+                                <label><input type="radio" name="male-female"
+                                        id="female" value="Other"
+                                        required>Other</label>
+                            </span>
+                        </div>
+                        <div class="skills">
+                            <label for="skills">Skills:</label>
+                            <span class="text-p">
+                                <label><input type="checkbox" value="C++"
+                                        id="cpp" class="checkbox">Java</label>
+                                <label><input type="checkbox" value="HTML"
+                                        id="html" class="checkbox">HTML</label>
+                                <label><input type="checkbox" value="CSS"
+                                        id="css" class="checkbox">CSS</label>
+                                <label><input type="checkbox" value="JavaScript"
+                                        id="css"
+                                        class="checkbox">JavaScript</label>
+                            </span>
+                        </div>
+                        <div class="button">
+                            <button type="submit" id="submit">Submit</button>
+                            <button type="reset" id="reset">Clear</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="line"></div>
+                <div class="op-box">
+                    <div class="output">
+                        <h2>Students Detail</h2>
+                        <div class="cardContainer" id="cardContainer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
